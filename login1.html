@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+    background-color:#676767;
+    align-items: center;
+    justify-content: center; 
+    display: flex; 
+}
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>MusicSpy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="flex-container" style="background-color: #141414; border-radius: 20px; flex-direction: column; height: 50vh; width: 50vh; margin-top: 10%; border-color: white; align-items: center;">
+        <div class="items" style="align-self: center;">
+            <h1 style="text-align: center; color: white; font-size: 40px;" >Log in to MusicSpy</h1>
+        </div>
+        <div class="items"> 
+            <input type="text" id="username" value="Username" class="value" minlength="8" maxlength="15" onclick="select()">
+        </div>
+        <div class="items" >
+            <div class="flex-container" style="background-color: #676767;"></div>
+            <input type="password" id="pass" value="password" class="value" minlength="8" maxlength="10" onclick="select()"><br>
+            <input type="checkbox" onclick="showpassword()">
+            <label for="showpassword" style="color: white;">Show Password</label>
+        </div>
+        <div class="items">
+            <a href="musicspy1.html"><input type="button" id="login" value="    Login    " onclick="return login()" class="value"></a>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
