@@ -1,12 +1,11 @@
 function login(){
-
     var x=document.getElementById("username").value;
     var y=document.getElementById("pass").value;
     if(x=="HiteshBanwani" && y=="BANWANI"){
         return true
     } 
     else{
-        alert("Invalid Username or Password");
+        document.getElementById("msg").innerHTML="Invalid Username or Password";
         return false;
     }
 }
@@ -16,7 +15,7 @@ function checkpassword(){
     if(x==y){
         return true;
     }else{
-        alert("Password and Confirm Password is different");
+        document.getElementById("msg").innerHTML="Password and Confirm Password is different";
         return false;
     }
 }
