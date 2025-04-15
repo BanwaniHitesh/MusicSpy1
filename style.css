@@ -45,16 +45,23 @@ img{
     display: flex; 
     margin-left: 40px;
     margin-right: 40px;
+    position: static;
     
 }
 .image-item {
     color: white;
     text-align: center; 
-    margin: 10px; 
+    margin: 10px;
+    position:static; 
 }
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-
+.audio{
+    opacity: 0;
+}
+.audio:hover{
+    opacity: 1;
+}
