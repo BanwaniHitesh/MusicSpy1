@@ -34,18 +34,18 @@
         <title> Musicspy </title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-image: linear-gradient(black,black ,  gray);">
+    <body style="background-image: linear-gradient(black , black, gray);">
        <div>    
         <h1 style="color: white; text-align: center;">Welcome to Musicspy</h1>   
         <center>
         <div style="display: flex; color: white;" >
-        <fieldset>
+        <fieldset style="cursor: pointer;">
             All
         </fieldset>
-        <fieldset> 
+        <fieldset style="cursor: pointer;"> 
             Music
         </fieldset>
-        <fieldset>
+        <fieldset style="cursor: pointer;">
             Prodcast
         </fieldset>
         </fieldset>
@@ -60,9 +60,9 @@
     
         <div class="image-container" style="overflow: auto; scrollbar-width: none;">
             <div class="image-item" >
-                <img src="TBMAUJ.jpg" onclick="playsong('TBMAUJ')" style="cursor: pointer;">
+                <img src="TBMAUJ.jpg" onclick="playsong('TBMAUJ','TBMAUJ_name')" style="cursor: pointer;">
                 <div class="flex-container" style="flex-direction: column;">
-                    <div class="items" style="border-radius: 20px; background-color: #141414;">
+                    <div id="TBMAUJ_name" class="items" style="border-radius: 20px; background-color: #141414;">
                     <p>Teri Baaton Mein Aisa Uljha Jiya Title Track</p>
                 </div>
                 <audio controls src="Teri_Baaton_Mein_Aisa_Uljha_Jiya_Title_Track_-_Shahid_Kapoor_Kriti_Sanon_Raghav_Tanishk_Asees-converted.mp3" id="TBMAUJ"></audio>
@@ -70,9 +70,9 @@
             </div>
             <div class="image-container">
                 <div class="image-item">
-                    <img src="Desi-Kalakaar.png" onclick="playsong('DKSong')" style="cursor: pointer;">
+                    <img src="Desi-Kalakaar.png" onclick="playsong('DKSong','DKSong_name')" style="cursor: pointer;">
                     <div class="flex-container" style="flex-direction: column;">
-                        <div class="items" style="border-radius: 20px; background-color: #141414;">
+                        <div id="DKSong_name" class="items" style="border-radius: 20px; background-color: #141414;">
                         <p>Desi Kalakaar</p>
                     </div>
                     <br>
@@ -80,9 +80,9 @@
                     <audio controls src="Desi-Kalakaar.mp3" id="DKSong"></audio>
                 </div>
                     <div class="image-item">
-                        <img src="2.jpg" onclick="playsong('Husn')" style="cursor: pointer;">
+                        <img src="2.jpg" onclick="playsong('Husn','Husn_name')" style="cursor: pointer;">
                         <div class="flex-container" style="flex-direction: column;">
-                            <div class="items" style="border-radius: 20px; background-color: #141414;">
+                            <div id="Husn_name" class="items" style="border-radius: 20px; background-color: #141414;">
                             <p>Husn</p>
                         </div>
                         <br>
@@ -90,19 +90,19 @@
                         <audio controls src="Anuv_Jain-Husn.mp3" id="Husn"></audio>
                 </div>  
             <div class="image-item">
-                <img src="3.jpg" onclick="playsong('Tu_Mera_Hero')" style="cursor: pointer;">
+                <img src="3.jpg" onclick="playsong('Tu_Mera_Hero','Tu_Mera_Hero_name')" style="cursor: pointer;">
                 <div class="flex-container" style="flex-direction: column;">
-                    <div class="items" style="border-radius: 20px; background-color: #141414;">
+                    <div id="Tu_Mera_Hero_name" class="items" style="border-radius: 20px; background-color: #141414;">
                     <p>Tu Mera Hero</p>
                 </div>
                 <br>
                 </div>
-                <audio controls src="Desi_Boyz _Tu_Mera_Hero.mp3" id="Haaye_Oye"></audio>
+                <audio controls src="Desi_Boyz _Tu_Mera_Hero.mp3" id="Tu_Mera_Hero"></audio>
             </div>
             <div class="image-item">
-                <img src="4.jpg" onclick="playsong('Haaye_Oye')" style="cursor: pointer;">
+                <img src="4.jpg" onclick="playsong('Haaye_Oye','Haaye_Oye_name')" style="cursor: pointer;">
                 <div class="flex-container" style="flex-direction: column;">
-                    <div class="items" style="border-radius: 20px; background-color: #141414;">
+                    <div id="Haaye_Oye_name" class="items" style="border-radius: 20px; background-color: #141414;">
                     <p>Haaye Oye</p>
                 </div>
                 <br>

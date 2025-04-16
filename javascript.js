@@ -36,13 +36,14 @@ function showcpassword(){
     }
 }
 
-function playsong(songid){
+function playsong(songid, textid){
     const audio=document.getElementById(songid);
     if(audio.paused){
         audio.play();
-
+        document.getElementById(textid).style.backgroundColor="green";
     }
     else{
         audio.pause();
+        document.getElementById(textid).style.backgroundColor="#141414";
     }
 }
