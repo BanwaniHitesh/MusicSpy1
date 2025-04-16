@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <STYle>
             .items{
@@ -33,11 +34,11 @@
         <title> Musicspy </title>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body style="background-color:  #070504;">
+    <body style="background-image: linear-gradient(black,black ,  gray);">
        <div>    
         <h1 style="color: white; text-align: center;">Welcome to Musicspy</h1>   
         <center>
-        <div style="display: flex; color: white; background-color: #070504;" >
+        <div style="display: flex; color: white;" >
         <fieldset>
             All
         </fieldset>
@@ -53,34 +54,30 @@
 
        <div>
         <h1 style="color: white;"> 
-          Album Featuring You Like            
+          Songs Featuring You Like            
         </h1>
         </div>
     
-        <div class="image-container" style="overflow: auto;">
-            <div class="image-item">
-                <img src="TBMAUJ.jpg" >
+        <div class="image-container" style="overflow: auto; scrollbar-width: none;">
+            <div class="image-item" >
+                <img src="TBMAUJ.jpg" onclick="playsong('TBMAUJ')" style="cursor: pointer;">
                 <div class="flex-container" style="flex-direction: column;">
                     <div class="items" style="border-radius: 20px; background-color: #141414;">
                     <p>Teri Baaton Mein Aisa Uljha Jiya Title Track</p>
                 </div>
-                </div>
-                    <audio controls class="audio">
-                        <source src="Teri_Baaton_Mein_Aisa_Uljha_Jiya_Title_Track_-_Shahid_Kapoor_Kriti_Sanon_Raghav_Tanishk_Asees-converted.mp3" id="song1" type="audio/mp3">
-                    </audio>
+                <audio controls src="Teri_Baaton_Mein_Aisa_Uljha_Jiya_Title_Track_-_Shahid_Kapoor_Kriti_Sanon_Raghav_Tanishk_Asees-converted.mp3" id="TBMAUJ"></audio>
+            </div>
             </div>
             <div class="image-container">
                 <div class="image-item">
-                    <img src="Desi-Kalakaar.png">
+                    <img src="Desi-Kalakaar.png" onclick="playsong('DKSong')" style="cursor: pointer;">
                     <div class="flex-container" style="flex-direction: column;">
                         <div class="items" style="border-radius: 20px; background-color: #141414;">
                         <p>Desi Kalakaar</p>
                     </div>
                     <br>
                     </div>
-                    <audio controls class="audio">
-                            <source src="Desi-Kalakaar.mp3" type="audio/mp3">
-                        </audio>
+                    <audio controls src="Desi-Kalakaar.mp3" id="DKSong"></audio>
                 </div>
                     <div class="image-item">
                         <img src="2.jpg">
@@ -118,6 +115,6 @@
             
             </div>
         </div>
-        
+      <script src="javascript.js"></script>  
     </body>
 </html>
