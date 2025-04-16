@@ -5,7 +5,7 @@ function login(){
         return true
     } 
     else{
-        document.getElementById("msg").innerHTML="Invalid Username or Password";
+        alert("Invalid Username or Password");
         return false;
     }
 }
@@ -15,7 +15,7 @@ function checkpassword(){
     if(x==y){
         return true;
     }else{
-        document.getElementById("msg").innerHTML="Password and Confirm Password is different";
+        alert("Password and Confirm Password is different");
         return false;
     }
 }
@@ -33,5 +33,16 @@ function showcpassword(){
         x.type = "text";
     }else{
         x.type = "password";
+    }
+}
+
+function playsong(songid){
+    const audio=document.getElementById(songid);
+    if(audio.paused){
+        audio.play();
+
+    }
+    else{
+        audio.pause();
     }
 }
