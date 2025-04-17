@@ -38,12 +38,25 @@ function showcpassword(){
 
 function playsong(songid, textid){
     const audio=document.getElementById(songid);
+    var songarr=['TBMAUJ','DKSong','Husn','Tu_Mera_Hero','Haaye_Oye']
+    var textarr=['TBMAUJ_name','DKSong_name','Husn_name','Tu_Mera_Hero_name','Haaye_Oye_name']
     if(audio.paused){
         audio.play();
-        document.getElementById(textid).style.backgroundColor="green";
+        for(i=0;i<songarr.length;i++){
+            if(songarr[i]==songid){
+                document.getElementById(textid).style.backgroundColor="#3CB043";
+                continue;
+            }
+            else{
+            document.getElementById(songarr[i]).pause();
+            document.getElementById(textarr[i]).style.backgroundColor="#141414";
+            
+        }
+    }
     }
     else{
         audio.pause();
         document.getElementById(textid).style.backgroundColor="#141414";
     }
+
 }
