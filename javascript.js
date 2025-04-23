@@ -44,19 +44,22 @@ function playsong(songid, textid){
         audio.play();
         for(i=0;i<songarr.length;i++){
             if(songarr[i]==songid){
-                document.getElementById(textid).style.backgroundColor="#3CB043";
+                document.getElementById(textid).style.color="limegreen";
+                document.getElementById(songarr[i]).style.opacity=1;
                 continue;
             }
             else{
-            document.getElementById(songarr[i]).pause();
-            document.getElementById(textarr[i]).style.backgroundColor="#141414";
+                document.getElementById(songarr[i]).pause();
+                document.getElementById(songarr[i]).style.opacity=0;
+            document.getElementById(textarr[i]).style.color="#ffffff";
             
         }
     }
-    }
-    else{
-        audio.pause();
-        document.getElementById(textid).style.backgroundColor="#141414";
+}
+else{
+    audio.pause();
+    document.getElementById(songarr[i]).style.opacity=0;
+        document.getElementById(textid).style.color="#ffffff";
     }
 
 }
