@@ -38,8 +38,8 @@ function showcpassword(){
 
 function playsong(songid, textid){
     const audio=document.getElementById(songid);
-    var songarr=['TBMAUJ','DKSong','Husn','Tu_Mera_Hero','Haaye_Oye']
-    var textarr=['TBMAUJ_name','DKSong_name','Husn_name','Tu_Mera_Hero_name','Haaye_Oye_name']
+    var songarr=['TBMAUJ','DKSong','Husn','Tu_Mera_Hero','Haaye_Oye','TBMAUJ1','DKSong1','Husn1','Tu_Mera_Hero1','Haaye_Oye1']
+    var textarr=['TBMAUJ_name','DKSong_name','Husn_name','Tu_Mera_Hero_name','Haaye_Oye_name','TBMAUJ_name1','DKSong_name1','Husn_name1','Tu_Mera_Hero_name1','Haaye_Oye_name1']
     if(audio.paused){
         audio.play();
         for(i=0;i<songarr.length;i++){
